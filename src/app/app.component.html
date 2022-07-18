@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (selectedTopic)="switchTopic($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes>
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="topic === 'recipes'"></app-recipes>
+      <app-shopping-list *ngIf="topic === 'shopping-list'"></app-shopping-list>
     </div>
   </div>
 </div>
