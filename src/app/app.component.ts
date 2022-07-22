@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  topic: string = 'recipes';
-
-  switchTopic(topic: string) {
-    this.topic = topic;
-  }
-}
+export class AppComponent {}
